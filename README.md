@@ -3,3 +3,7 @@
 # translate-ui
 
 TDB
+
+#License
+
+WTFPL (http://www.wtfpl.net/)
