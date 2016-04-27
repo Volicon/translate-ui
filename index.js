@@ -11,7 +11,7 @@ var Translator = (function () {
     }
     // Create child translator. If it fails, it forward request to parent.
     Translator.prototype.extend = function (vocabulary) {
-        return new Translator(this, vocabulary);
+        return new Translator(vocabulary, this);
     };
     // JSON.stringify( rootTranslator ) in the console will help you to create empty vocabulary
     Translator.prototype.toJSON = function () {

@@ -26,7 +26,7 @@ export class Translator {
 
     // Create child translator. If it fails, it forward request to parent.
     extend( vocabulary : Vocabulary ){
-        return new Translator( this,  vocabulary );
+        return new Translator( vocabulary, this );
     }
 
     // JSON.stringify( rootTranslator ) in the console will help you to create empty vocabulary

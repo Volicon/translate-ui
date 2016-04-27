@@ -11,7 +11,7 @@ export declare class Translator {
     unknown: Words;
     _t: (text: string) => string;
     constructor(vocabulary: Vocabulary, parent?: Translator);
-    extend(vocabulary: Vocabulary): any;
+    extend(vocabulary: Vocabulary): Translator;
     toJSON(): {
         [phrase: string]: string;
     };
