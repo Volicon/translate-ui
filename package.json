@@ -1,6 +1,6 @@
 {
   "name": "translate-ui",
-  "version": "1.0.0-rc0",
+  "version": "1.0.0-rc1",
   "description": "Simple multi-language translation written with TypeScript",
   "main": "index.js",
   "scripts": {
