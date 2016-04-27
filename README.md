@@ -72,7 +72,7 @@ Bingo. You're done.
 
 There could be many translators in the system, assembled in hierarchies.
 
-Lets create special local translator for some specific page:
+Lets create special local translator for some specific page, extending the vocabulary of the root translator:
 
 ```javascript
 import translator from 'rootTranslator'
