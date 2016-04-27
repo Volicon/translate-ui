@@ -2,7 +2,7 @@
     "compileOnSave": true,
     "compilerOptions": {
         "declaration": true,
-        "module": "umd",
+        "module": "commonjs",
         "target": "es5",
         "sourceMap": true
     }
