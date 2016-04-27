@@ -17,7 +17,7 @@ export class Translator {
     _t : ( text : string ) => string    
     
     // Create root translator
-    constructor( public parent : Translator, public vocabulary : Vocabulary ){
+    constructor( public vocabulary : Vocabulary, public parent? : Translator ){
         vocabulary[ 'en' ] || ( vocabulary[ 'en' ] = {} );
         
         this.unknown = {};

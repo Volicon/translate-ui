@@ -17,7 +17,7 @@ Packaged as TypeScript and ES5 CommonJS module.
 ```javascript
 import { Translator } from 'translate-ui'
 
-const translator = new Translator( null, {
+const translator = new Translator({
     // here are language dictionaries goes
     korean : {
         'My english phrase' : 'Korean translation',
@@ -58,7 +58,7 @@ Here will be are all unknown phrases. Copy it, and send it for translation to Ko
 4. When you received translated phrases, insert them into translator vocabulary.
 
 ```javascript
-const translator = new Translator( null, {
+const translator = new Translator({
     // here are language dictionaries goes
     korean : {
         "Hello World!" : "?№*(?*(:№;?*%"
@@ -75,9 +75,9 @@ There could be many translators in the system, assembled in hierarchies.
 Lets create special local translator for some specific page:
 
 ```javascript
-import root from 'rootTranslator'
+import translator from 'rootTranslator'
 
-export default new Translator( root, {
+export default translator.extend({
     // here are language dictionaries goes
     korean : {
         "By-by, world." : "#$%#%$!!!"

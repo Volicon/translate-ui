@@ -1,10 +1,10 @@
 "use strict";
 var Translator = (function () {
     // Create root translator
-    function Translator(parent, vocabulary) {
+    function Translator(vocabulary, parent) {
         var _this = this;
-        this.parent = parent;
         this.vocabulary = vocabulary;
+        this.parent = parent;
         vocabulary['en'] || (vocabulary['en'] = {});
         this.unknown = {};
         this._t = function (text) { return _this.translate(text); };

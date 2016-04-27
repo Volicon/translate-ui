@@ -5,13 +5,13 @@ export declare type Words = {
     [phrase: string]: string;
 };
 export declare class Translator {
-    parent: Translator;
     vocabulary: Vocabulary;
+    parent: Translator;
     static language: string;
     unknown: Words;
     _t: (text: string) => string;
-    constructor(parent: Translator, vocabulary: Vocabulary);
-    extend(vocabulary: Vocabulary): Translator;
+    constructor(vocabulary: Vocabulary, parent?: Translator);
+    extend(vocabulary: Vocabulary): any;
     toJSON(): {
         [phrase: string]: string;
     };
