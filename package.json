@@ -1,0 +1,16 @@
+{
+  "name": "translate-ui",
+  "version": "1.0.0-rc0",
+  "description": "Simple multi-language translation written with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "internationalization",
+    "localization",
+    "typescipt"
+  ],
+  "author": "Vlad Balin",
+  "license": "MIT"
+}
