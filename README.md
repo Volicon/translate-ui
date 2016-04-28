@@ -27,7 +27,7 @@ const translator = new Translator({
 
 window._translator = translator; // it will help us later, be patient
 
-translator.language = "korean"; //can be dynamically switched
+Translator.language = "korean"; // Current language, can be dynamically switched, "en" by default
 
 export default translator;
 ```
