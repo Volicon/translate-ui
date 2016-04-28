@@ -10,7 +10,7 @@ Packaged as TypeScript and ES5 CommonJS module.
  
 #Usage
 
-1. You need to create empty root translator for your application:
+### 1. You need to create empty root translator for your application:
 
     rootTranslator.js
     
@@ -32,7 +32,7 @@ Translator.language = "korean"; // Current language, can be dynamically switched
 export default translator;
 ```
 
-2. In your JS, wrap your existing string resources to _t function call:
+### 2. In your JS, wrap your existing string resources to _t function call:
 
 ```javascript
 import { _t } from 'rootTranslator'
@@ -46,7 +46,7 @@ But you'll see following warnings in the console:
 
     [Localization] No translation for "Hello World!"
 
-3. Build vocabulary for translation:
+### 3. Build vocabulary for translation:
 
 In the browser's console, type:
 
@@ -55,7 +55,7 @@ In the browser's console, type:
     
 Here will be are all unknown phrases. Copy it, and send it for translation to Korean guy. 
 
-4. When you received translated phrases, insert them into translator vocabulary.
+### 4. When you received translated phrases, insert them into translator vocabulary.
 
 ```javascript
 const translator = new Translator({
